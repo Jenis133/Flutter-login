@@ -18,7 +18,7 @@ class ForgotState extends State<Forgot> {
             Container(
               padding: EdgeInsets.fromLTRB(15, 110, 0, 0),
               child: Text(
-                'Ohhh no Reset password now',
+                ' Reset password ',
                 style: TextStyle(fontSize: 80, fontWeight: FontWeight.bold),
               ),
             ),

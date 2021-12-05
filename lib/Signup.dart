@@ -19,7 +19,7 @@ class SignupPageState extends State<SignupPage> {
               child: Stack(children: <Widget>[
             Container(
                 padding: EdgeInsets.fromLTRB(15, 110, 0, 0),
-                child: Text('Signup',
+                child: Text('Patient Info entry',
                     style:
                         TextStyle(fontSize: 80, fontWeight: FontWeight.bold))),
             Container(
@@ -32,6 +32,16 @@ class SignupPageState extends State<SignupPage> {
               padding: EdgeInsets.only(top: 35, left: 20, right: 20),
               child: Column(children: <Widget>[
                 TextField(
+                  decoration: InputDecoration(
+                      labelText: 'Username',
+                      labelStyle: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey)),
+                ),
+                SizedBox(height: 20),
+                TextField(
+                  obscureText: false,
                   decoration: InputDecoration(
                       labelText: 'Full name',
                       labelStyle: TextStyle(
@@ -60,15 +70,24 @@ class SignupPageState extends State<SignupPage> {
                 ),
                 SizedBox(height: 20),
                 TextField(
-                  obscureText: true,
+                  obscureText: false,
                   decoration: InputDecoration(
-                      labelText: 'Confirm password',
+                      labelText: 'Name of medicine',
                       labelStyle: TextStyle(
                           fontFamily: 'Montserrat',
                           fontWeight: FontWeight.bold,
                           color: Colors.grey)),
                 ),
                 SizedBox(height: 20),
+                TextField(
+                  obscureText: false,
+                  decoration: InputDecoration(
+                      labelText: 'Dosage',
+                      labelStyle: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey)),
+                ),
                 SizedBox(height: 50),
                 Container(
                   height: 50,
@@ -80,7 +99,7 @@ class SignupPageState extends State<SignupPage> {
                     child: GestureDetector(
                       onTap: () {},
                       child: Center(
-                        child: Text('Signup',
+                        child: Text('Confirm entry',
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 30,
